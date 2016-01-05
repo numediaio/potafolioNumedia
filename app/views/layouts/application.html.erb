@@ -7,8 +7,32 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+			<header class="wrap_navegador clearfix">
+				<nav>
+					<div class="wrap_logo_numedia">
+						<a class="logo_header" href="">
+							<img src="img/logo_numedia.png"alt="">
+						</a>
+					</div>
+					<div class="btn_navegacion">
+						<div>
+							<a href="">
+								PROYECTO						
+							</a>
+						</div>
+						<div>
+							<a href="">
+								CONTACTO						
+							</a>
+						</div>
+					</div>
+				</nav>
+			</header>
 <%= yield %>
-
+			<section class="wrap_azul_footer">
+				<div class="logo_azul_footer">
+					<img  src="img/logo_numedia_azul_footer.jpg" alt="">
+				</div>
+			</section>
 </body>
 </html>

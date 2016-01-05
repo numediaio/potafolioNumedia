@@ -1,0 +1,19 @@
+<%= form_for @articulo do |potato| %>
+	<% if @articulo.errors.any? %>
+		<h2> <%= pluralize(@articulo.errors.count, "error") %> evitaron que se guardara el articulo: </h2>
+		<ul>
+			<% @post.errors.full_messages.each do|mensaje| %>
+				<li><%= mensaje %></li>
+			<% end %>
+		</ul>
+	<% end %>
+
+	<%= potato.label :titulo %> <br>
+	<%= potato.text_field :titulo%>
+	<br><br>
+	<%= potato.label :cuerpo_texto, "Escribe el articulo :D" %> <br>
+	<%= potato.text_area :cuerpo_texto %>
+	<br>
+	<%= potato.submit %>
+
+<% end %>

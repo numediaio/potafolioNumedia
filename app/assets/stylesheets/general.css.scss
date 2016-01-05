@@ -1,0 +1,404 @@
+$azulMarino: #3a3d49;
+$azulClaro: #3dc0c8;
+$blanco: #f7f4ef;
+
+@import "normalize";
+
+@import "proyectos";
+
+@import "font-awesome";
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.activo {
+  opacity: 0.5;
+}
+
+.btn_navegacion {
+  padding-top: 5px;
+  padding-right: 10px;
+  text-align: right;
+  box-sizing: border-box;
+  div {
+    display: inline-block;
+    padding: 0 10px;
+  }
+}
+
+.cierre_gridder {
+  font-size: 40px;
+  text-align: right;
+  padding-right: 80px;
+  a {
+    color: $blanco;
+    text-decoration: none;
+  }
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.col-sm-6 {
+  width: 75%;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.gridder-navigation {
+  text-align: right;
+  padding-right: 80px;
+  padding-top: 10px;
+}
+
+.gridder-close {
+  display: inline-block;
+  color: white;
+}
+
+.gridder-expanded-content {
+  padding: 30px;
+  box-sizing: box-content;
+  background: #3a3d49;
+}
+
+.gridder-list {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  &:hover {
+    background: $blanco;
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.fondoAzul {
+  background: $azulMarino;
+}
+
+.gridder-padding {
+  background: $azulMarino;
+}
+
+.img-responsive {
+  width: 130px !important;
+  padding: 80px 0px;
+}
+
+.imagen_responsiva {
+  border: 3px solid $azulClaro;
+  width: 100%;
+  max-width: 500px;
+}
+
+.logo_header {
+  img {
+    width: 150px;
+    padding: 0 0 0 10px;
+  }
+}
+
+.wrapper_proyectos {
+  min-height: 100%;
+  margin: 0 auto -155px;
+}
+
+.wrap_azul_footer {
+  height: 155px;
+}
+
+.logo_azul_footer {
+  width: 50px;
+  margin: 0 auto;
+  padding-top: 70px;
+  img {
+    width: 100%;
+  }
+}
+
+.papa_wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.proyectos {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.titulo_section {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #3a3d49;
+}
+
+.titulo_cliente {
+  font-size: 1.8em;
+}
+
+.tipo_de_proyecto, .tipo_de_proyecto_index {
+  padding-bottom: 10px;
+  div {
+    display: inline-block;
+    margin: 10px 25px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $azulClaro;
+  }
+}
+
+.wrap_btn_ver, .ver_proyecto_proyectos {
+  border: 0.2rem solid $azulClaro;
+  padding: 10px;
+  max-width: 280px;
+  color: $azulClaro;
+  margin: 20px auto;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: $azulClaro;
+    color: white;
+  }
+}
+
+.wrap_fondo_compu {
+  background: url(../img/img_numedia_laptop.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  margin-top: -170px;
+}
+
+.wrap_navegador {
+  background: $azulMarino;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.wrap_logo_numedia {
+  float: left;
+}
+
+.wrap_landing {
+  position: relative;
+  width: auto;
+  height: 450px;
+  border: 15px solid $azulClaro;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background: $azulClaro;
+  z-index: -100;
+  video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.wrap_info_gridder {
+  padding: 0 25px;
+  color: $blanco;
+}
+
+.wrap_texto_landing {
+  font-weight: 900;
+  color: $azulClaro;
+  font-size: 3.5rem;
+  line-height: 80%;
+  padding: 0 0 0 20px;
+  position: absolute;
+  top: 35%;
+}
+
+.wrap_proyectos {}
+
+.wrap_grid_content, .wrap_grid_list {
+  display: inline-block;
+}
+
+.wrap_footer {
+  background: $azulMarino;
+  /* Safari */
+  -webkit-transform: rotate(-5deg);
+  /* Firefox */
+  -moz-transform: rotate(-5deg);
+  /* IE */
+  -ms-transform: rotate(-5deg);
+  /* Opera */
+  -o-transform: rotate(-5deg);
+  margin: -180px -100px 0 -100px;
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform-origin: left center;
+  padding: 50px 0 30px 0;
+}
+
+.wrap_footer_chueco {
+  /* Safari */
+  -webkit-transform: rotate(5deg);
+  /* Firefox */
+  -moz-transform: rotate(5deg);
+  /* IE */
+  -ms-transform: rotate(5deg);
+  /* Opera */
+  -o-transform: rotate(5deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: $blanco;
+}
+
+.wrap_proyectos_derecho {
+  background: $blanco;
+  /* Safari */
+  -webkit-transform: rotate(-5deg);
+  /* Firefox */
+  -moz-transform: rotate(-5deg);
+  /* IE */
+  -ms-transform: rotate(-5deg);
+  /* Opera */
+  -o-transform: rotate(-5deg);
+  margin: 0 -100px;
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform-origin: left center;
+  padding-bottom: 90px;
+}
+
+.wrap_sociales {
+  div {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid cyan;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      padding: 15px;
+    }
+  }
+  a {
+    display: inline-block;
+    color: $blanco;
+    font-size: 1em;
+  }
+}
+
+.contenido_proyectos {
+  /* Safari */
+  -webkit-transform: rotate(5deg);
+  /* Firefox */
+  -moz-transform: rotate(5deg);
+  /* IE */
+  -ms-transform: rotate(5deg);
+  /* Opera */
+  -o-transform: rotate(5deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  padding: 80px 0 0 0;
+  text-align: center;
+}
+
+@media (min-width: 801px) {
+  .gridder-list {
+    width: 32%;
+  }
+  .img-responsive {
+    width: 160px !important;
+    padding: 100px 0px;
+  }
+  .wrap_landing {
+    position: relative;
+    width: auto;
+    height: 550px;
+  }
+  .wrap_fondo_compu {
+    height: 700px;
+    margin-top: -180px;
+  }
+  .logo_azul_footer {
+    padding-top: 60px;
+  }
+  .separador_imagenes {
+    width: 46%;
+  }
+  .titulo_proyecto_index {
+    width: 48%;
+    height: 300px;
+    font-size: 3.8rem;
+    line-height: 250px;
+  }
+  .tipo_de_proyecto_index {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .col-sm-6 {
+    width: 46%;
+  }
+  .wrap_texto_landing {
+    font-weight: 900;
+    color: $azulClaro;
+    font-size: 8rem;
+  }
+  .wrap_fondo_compu {
+    height: 800px;
+    margin-top: -180px;
+  }
+  .wrap_footer {
+    margin: -50px -100px 0 -100px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .img-responsive {
+    width: 200px !important;
+    padding: 150px 0px;
+  }
+  .wrap_landing {
+    height: 850px;
+  }
+  .wrap_fondo_compu {
+    height: 1000px;
+    margin-top: -180px;
+  }
+  .wrap_footer {
+    padding: 50px 0 80px 0;
+  }
+  .titulo_proyecto_index {
+    font-size: 6rem;
+  }
+}
